@@ -1,0 +1,58 @@
+{% extends 'admin/change_form.html' %}
+
+{% block object-tools-items %}
+    {# ##################################################### #}
+
+    {% url 'admin:students_student_changelist' as link_url %}
+    {% if link_url and original.active and perms.students.view_student %}
+        <li>
+            <a href="{{ link_url }}?q={{ original.student_number }}" class="viewsitelink">
+                Search for full student record
+            </a>
+        </li>
+    {% endif %}
+
+    {# ##################################################### #}
+{% endblock object-tools-items %}
+
+
+{% block footer %}
+<div id="footer">
+    {% if original.pk %}
+    <div class="footer-content">
+        {# ##################################################### #}
+        <h2>Permissions for this student</h2>
+        <ul class="actionlist">
+            {% for perm in original.permission_set.active %}
+                <li>
+                    {% include './perm_item.html' %}
+                </li>
+            {% empty %}
+                <li>
+                    No special permissions given.
+                </li>
+            {% endfor %}
+        </ul>
+        {# ##################################################### #}
+    </div>
+    {% endif %}
+</div>
+{% endblock footer %}
+
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+    @media (max-width: 1024px)  {
+        #footer .footer-content {
+            margin: 0px 10px;
+        }
+    }
+    @media (min-width: 1024px)  {
+        #footer .footer-content {
+            margin: 0px 40px;
+        }
+    }
+</style>
+
+{% endblock extrastyle %}

@@ -1,0 +1,9 @@
+include requirements.txt
+include README.rst
+include LICENSE.txt
+#recursive-include studentperms/static *
+#recursive-include studentperms/templates *
+
+# added by check_manifest.py
+recursive-include fixtures *.json
+recursive-include studentperms *.html

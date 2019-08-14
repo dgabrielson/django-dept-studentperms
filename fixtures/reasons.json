@@ -1,0 +1,123 @@
+[
+{
+    "model": "studentperms.reason",
+    "pk": 1,
+    "fields": {
+        "active": true,
+        "created": "2019-02-12T17:59:46.720Z",
+        "modified": "2019-02-13T17:30:33.083Z",
+        "name": "Major Restriction",
+        "ordering": 11
+    }
+},
+{
+    "model": "studentperms.reason",
+    "pk": 2,
+    "fields": {
+        "active": true,
+        "created": "2019-02-12T17:59:56.642Z",
+        "modified": "2019-02-13T17:30:33.144Z",
+        "name": "Prerequisite Waiver",
+        "ordering": 21
+    }
+},
+{
+    "model": "studentperms.reason",
+    "pk": 3,
+    "fields": {
+        "active": true,
+        "created": "2019-02-12T18:00:08.264Z",
+        "modified": "2019-02-13T17:30:33.123Z",
+        "name": "Pre/Co-requisite Waiver",
+        "ordering": 31
+    }
+},
+{
+    "model": "studentperms.reason",
+    "pk": 4,
+    "fields": {
+        "active": true,
+        "created": "2019-02-12T18:00:16.015Z",
+        "modified": "2019-02-13T17:30:33.004Z",
+        "name": "Capacity Override",
+        "ordering": 41
+    }
+},
+{
+    "model": "studentperms.reason",
+    "pk": 5,
+    "fields": {
+        "active": true,
+        "created": "2019-02-12T18:00:27.154Z",
+        "modified": "2019-02-13T17:30:33.164Z",
+        "name": "Program Restriction",
+        "ordering": 14
+    }
+},
+{
+    "model": "studentperms.reason",
+    "pk": 6,
+    "fields": {
+        "active": true,
+        "created": "2019-02-12T18:00:37.620Z",
+        "modified": "2019-02-13T17:30:33.224Z",
+        "name": "Year/Class Restriction",
+        "ordering": 24
+    }
+},
+{
+    "model": "studentperms.reason",
+    "pk": 7,
+    "fields": {
+        "active": true,
+        "created": "2019-02-12T18:00:46.564Z",
+        "modified": "2019-02-13T17:30:33.203Z",
+        "name": "Special Approval",
+        "ordering": 34
+    }
+},
+{
+    "model": "studentperms.reason",
+    "pk": 8,
+    "fields": {
+        "active": true,
+        "created": "2019-02-12T18:00:54.537Z",
+        "modified": "2019-02-13T17:30:33.041Z",
+        "name": "College Restriction",
+        "ordering": 17
+    }
+},
+{
+    "model": "studentperms.reason",
+    "pk": 9,
+    "fields": {
+        "active": true,
+        "created": "2019-02-12T18:01:05.440Z",
+        "modified": "2019-02-13T17:30:33.183Z",
+        "name": "Section Change",
+        "ordering": 47
+    }
+},
+{
+    "model": "studentperms.reason",
+    "pk": 10,
+    "fields": {
+        "active": true,
+        "created": "2019-02-12T18:01:13.697Z",
+        "modified": "2019-02-13T17:30:33.103Z",
+        "name": "Permission to Audit",
+        "ordering": 27
+    }
+},
+{
+    "model": "studentperms.reason",
+    "pk": 11,
+    "fields": {
+        "active": true,
+        "created": "2019-02-12T18:01:21.992Z",
+        "modified": "2019-02-13T17:30:33.063Z",
+        "name": "Lab Exemption",
+        "ordering": 37
+    }
+}
+]

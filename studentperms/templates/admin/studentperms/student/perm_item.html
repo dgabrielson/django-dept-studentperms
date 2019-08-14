@@ -1,0 +1,4 @@
+{% url 'admin:studentperms_permission_change' perm.id as link_url %}
+<a href="{{ link_url }}">
+    {{ perm }}
+</a>

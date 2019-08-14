@@ -1,0 +1,39 @@
+{% extends 'admin/change_form.html' %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+    {# three columns for the "reasons" checkboxes #}
+    @media (min-width: 800px)  {
+        #id_reasons {
+            width: 600px;
+        }
+        #id_reasons li {
+            width: 200px;
+            float: left;
+            display: inline;
+        }
+    }
+</style>
+{% endblock %}
+
+
+{% block object-tools-items %}
+    {# ##################################################### #}
+
+    {% url 'admin:studentperms_student_change' original.student_id as link_url %}
+    {% if link_url and perms.studentperms.view_student %}
+        <li>
+            <a href="{{ link_url }}" class="viewsitelink">
+                {% if perms.studentperms.change_student %}
+                change
+                {% else %}
+                view
+                {% endif %}
+                student
+            </a>
+        </li>
+    {% endif %}
+
+    {# ##################################################### #}
+{% endblock object-tools-items %}
