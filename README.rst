@@ -2,4 +2,4 @@ django-dept-studentperms
 ==========================
 
 
-A application for tracking student special permissions.
+An application for tracking student special permissions.
